@@ -2,14 +2,13 @@
 
 > Practice attacking and defending OWASP LLM Top 10 (2025) and OWASP Agentic AI Top 10 (2026) vulnerabilities in realistic, isolated environments.
 
-Inspired by [WebGoat](https://owasp.org/www-project-webgoat/) and [Juice Shop](https://owasp.org/www-project-juice-shop/) — but for AI/LLM security.
 
 ---
 
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/iammansoorali/VAI/
+git clone https://github.com/iammansoorali/VAI.git
 cd VAI
 chmod +x scripts/install.sh
 ./scripts/install.sh
