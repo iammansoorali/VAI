@@ -26,33 +26,33 @@ Default credentials:
 ## 🎯 Challenge Coverage
 
 ### OWASP LLM Top 10 (2025)
-| ID | Challenge | Difficulty | Points |
-|---|---|---|---|
-| LLM01:2025 | Direct Prompt Injection | Beginner | 100 |
-| LLM01:2025 | Indirect Prompt Injection (RAG) | Intermediate | 200 |
-| LLM02:2025 | Training Data Extraction | Intermediate | 200 |
-| LLM03:2025 | Poisoned Plugin Supply Chain | Intermediate | 250 |
-| LLM04:2025 | RAG Data Poisoning | Intermediate | 250 |
-| LLM05:2025 | Improper Output Handling | Intermediate | 200 |
-| LLM06:2025 | Excessive Agency Abuse | Intermediate | 300 |
-| LLM07:2025 | System Prompt Leakage | Beginner | 100 |
-| LLM08:2025 | Embedding Weakness | Expert | 400 |
-| LLM09:2025 | Hallucination Weaponization | Intermediate | 200 |
-| LLM10:2025 | Unbounded Token Consumption | Beginner | 100 |
+| ID | Challenge | Difficulty | 
+|---|---|---|
+| LLM01:2025 | Direct Prompt Injection | Beginner | 
+| LLM01:2025 | Indirect Prompt Injection (RAG) | Intermediate |
+| LLM02:2025 | Training Data Extraction | Intermediate |
+| LLM03:2025 | Poisoned Plugin Supply Chain | Intermediate |
+| LLM04:2025 | RAG Data Poisoning | Intermediate |
+| LLM05:2025 | Improper Output Handling | Intermediate |
+| LLM06:2025 | Excessive Agency Abuse | Intermediate |
+| LLM07:2025 | System Prompt Leakage | Beginner |
+| LLM08:2025 | Embedding Weakness | Expert |
+| LLM09:2025 | Hallucination Weaponization | Intermediate |
+| LLM10:2025 | Unbounded Token Consumption | Beginner |
 
 ### OWASP Agentic Top 10 (2026)
-| ID | Challenge | Difficulty | Points |
-|---|---|---|---|
-| ASI01:2026 | Agent Goal Hijack | Intermediate | 300 |
-| ASI02:2026 | Tool Misuse & Exploitation | Intermediate | 300 |
-| ASI03:2026 | Identity & Privilege Abuse | Expert | 400 |
-| ASI04:2026 | Agentic Supply Chain (MCP) | Expert | 400 |
-| ASI05:2026 | Unexpected Code Execution | Expert | 500 |
-| ASI06:2026 | Memory & Context Poisoning | Expert | 400 |
-| ASI07:2026 | Insecure Inter-Agent Comms | Expert | 400 |
-| ASI08:2026 | Cascading Failures | Expert | 500 |
-| ASI09:2026 | Human-Agent Trust Exploitation | Intermediate | 300 |
-| ASI10:2026 | Rogue Agent | Expert | 500 |
+| ID | Challenge | Difficulty |
+|---|---|---|
+| ASI01:2026 | Agent Goal Hijack | Intermediate |
+| ASI02:2026 | Tool Misuse & Exploitation | Intermediate |
+| ASI03:2026 | Identity & Privilege Abuse | Expert |
+| ASI04:2026 | Agentic Supply Chain (MCP) | Expert |
+| ASI05:2026 | Unexpected Code Execution | Expert |
+| ASI06:2026 | Memory & Context Poisoning | Expert |
+| ASI07:2026 | Insecure Inter-Agent Comms | Expert |
+| ASI08:2026 | Cascading Failures | Expert |
+| ASI09:2026 | Human-Agent Trust Exploitation | Intermediate |
+| ASI10:2026 | Rogue Agent | Expert |
 
 ---
 
