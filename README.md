@@ -1,4 +1,4 @@
-# 🐐 LLM-GOAT — Vulnerable-by-Design AI Security Lab
+# VAI - Vulnerable-by-Design AI Security Lab
 
 > Practice attacking and defending OWASP LLM Top 10 (2025) and OWASP Agentic AI Top 10 (2026) vulnerabilities in realistic, isolated environments.
 
