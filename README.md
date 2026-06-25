@@ -9,8 +9,8 @@ Inspired by [WebGoat](https://owasp.org/www-project-webgoat/) and [Juice Shop](h
 ## 🚀 Quick Start
 
 ```bash
-git clone <repo-url> llm-goat
-cd llm-goat
+git clone https://github.com/iammansoorali/VAI/
+cd VAI
 chmod +x scripts/install.sh
 ./scripts/install.sh
 ```
