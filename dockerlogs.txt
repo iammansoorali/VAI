@@ -1,0 +1,271 @@
+llmgoat-redis  | 1:C 13 Jun 2026 08:50:09.439 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+llmgoat-redis  | 1:C 13 Jun 2026 08:50:09.441 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+llmgoat-redis  | 1:C 13 Jun 2026 08:50:09.441 * Redis version=7.4.9, bits=64, commit=00000000, modified=0, pid=1, just started
+llmgoat-redis  | 1:C 13 Jun 2026 08:50:09.444 * Configuration loaded
+llmgoat-redis  | 1:M 13 Jun 2026 08:50:09.447 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+llmgoat-redis  | 1:M 13 Jun 2026 08:50:09.447 * monotonic clock: POSIX clock_gettime
+llmgoat-redis  | 1:M 13 Jun 2026 08:50:09.453 * Running mode=standalone, port=6379.
+llmgoat-redis  | 1:M 13 Jun 2026 08:50:09.454 * Server initialized
+llmgoat-frontend  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+llmgoat-frontend  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+llmgoat-frontend  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+llmgoat-frontend  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+llmgoat-frontend  | 10-listen-on-ipv6-by-default.sh: info: /etc/nginx/conf.d/default.conf differs from the packaged version
+llmgoat-frontend  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+llmgoat-frontend  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+llmgoat-frontend  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+llmgoat-frontend  | /docker-entrypoint.sh: Configuration complete; ready for start up
+llmgoat-frontend  | 2026/06/13 09:37:41 [notice] 1#1: using the "epoll" event method
+llmgoat-frontend  | 2026/06/13 09:37:41 [notice] 1#1: nginx/1.25.5
+llmgoat-frontend  | 2026/06/13 09:37:41 [notice] 1#1: built by gcc 13.2.1 20231014 (Alpine 13.2.1_git20231014) 
+llmgoat-frontend  | 2026/06/13 09:37:41 [notice] 1#1: OS: Linux 6.17.0-35-generic
+llmgoat-frontend  | 2026/06/13 09:37:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+llmgoat-frontend  | 2026/06/13 09:37:41 [notice] 1#1: start worker processes
+llmgoat-frontend  | 2026/06/13 09:37:41 [notice] 1#1: start worker process 30
+llmgoat-frontend  | 2026/06/13 09:37:41 [notice] 1#1: start worker process 31
+llmgoat-frontend  | 2026/06/13 09:37:41 [notice] 1#1: start worker process 32
+llmgoat-frontend  | 2026/06/13 09:37:41 [notice] 1#1: start worker process 33
+llmgoat-postgres  | 
+llmgoat-postgres  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+llmgoat-postgres  | 
+llmgoat-postgres  | 2026-06-13 09:05:26.711 UTC [1] LOG:  starting PostgreSQL 16.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+llmgoat-postgres  | 2026-06-13 09:05:26.711 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+llmgoat-postgres  | 2026-06-13 09:05:26.711 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+llmgoat-postgres  | 2026-06-13 09:05:26.729 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+llmgoat-postgres  | 2026-06-13 09:05:26.764 UTC [30] LOG:  database system was shut down at 2026-06-13 09:05:11 UTC
+llmgoat-postgres  | 2026-06-13 09:05:26.797 UTC [1] LOG:  database system is ready to accept connections
+llmgoat-postgres  | 2026-06-13 09:10:26.865 UTC [28] LOG:  checkpoint starting: time
+llmgoat-postgres  | 2026-06-13 09:10:27.164 UTC [28] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.048 s, sync=0.040 s, total=0.300 s; sync files=2, longest=0.021 s, average=0.020 s; distance=0 kB, estimate=0 kB; lsn=0/1964B98, redo lsn=0/1964B60
+llmgoat-frontend  | 172.19.0.3 - - [13/Jun/2026:09:38:42 +0000] "GET /login HTTP/1.0" 304 0 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0" "172.19.0.1"
+llmgoat-redis     | 1:M 13 Jun 2026 08:50:09.456 * Ready to accept connections tcp
+llmgoat-ollama-init  | [?2026h[?25l[1Gpulling manifest [K[?25h[?2026l
+llmgoat-backend      | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+llmgoat-ollama-init  | Error: pull model manifest: Get "https://registry.ollama.ai/v2/library/llama3.2/manifests/3b": dial tcp: lookup registry.ollama.ai on 127.0.0.11:53: server misbehaving
+llmgoat-backend      | INFO:     Started parent process [1]
+llmgoat-backend      | INFO:     Started server process [8]
+llmgoat-backend      | INFO:     Waiting for application startup.
+llmgoat-backend      | [2m2026-06-13T09:37:45.357461Z[0m [[32m[1minfo     [0m] [1mllm_goat_starting             [0m [36mversion[0m=[35m1.0.0[0m
+llmgoat-backend      | 2026-06-13 09:37:45,466 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+llmgoat-backend      | 2026-06-13 09:37:45,467 INFO sqlalchemy.engine.Engine [raw sql] ()
+llmgoat-backend      | 2026-06-13 09:37:45,471 INFO sqlalchemy.engine.Engine select current_schema()
+llmgoat-backend      | 2026-06-13 09:37:45,516 INFO sqlalchemy.engine.Engine [raw sql] ()
+llmgoat-backend      | 2026-06-13 09:37:45,526 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+llmgoat-backend      | 2026-06-13 09:37:45,526 INFO sqlalchemy.engine.Engine [raw sql] ()
+llmgoat-backend      | 2026-06-13 09:37:45,533 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+llmgoat-backend      | 2026-06-13 09:37:45,534 INFO sqlalchemy.engine.Engine COMMIT
+llmgoat-backend      | [2m2026-06-13T09:37:45.534974Z[0m [[32m[1minfo     [0m] [1mdatabase_ready                [0m
+llmgoat-backend      | INFO:     Application startup complete.
+llmgoat-backend      | INFO:     Started server process [9]
+llmgoat-ollama-init  | [?2026h[?25l[1Gpulling manifest [K[?25h[?2026l
+llmgoat-backend      | INFO:     Waiting for application startup.
+llmgoat-backend      | [2m2026-06-13T09:37:46.730331Z[0m [[32m[1minfo     [0m] [1mllm_goat_starting             [0m [36mversion[0m=[35m1.0.0[0m
+llmgoat-backend      | 2026-06-13 09:37:46,780 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+llmgoat-backend      | 2026-06-13 09:37:46,780 INFO sqlalchemy.engine.Engine [raw sql] ()
+llmgoat-backend      | 2026-06-13 09:37:46,784 INFO sqlalchemy.engine.Engine select current_schema()
+llmgoat-backend      | 2026-06-13 09:37:46,785 INFO sqlalchemy.engine.Engine [raw sql] ()
+llmgoat-backend      | 2026-06-13 09:37:46,788 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+llmgoat-backend      | 2026-06-13 09:37:46,788 INFO sqlalchemy.engine.Engine [raw sql] ()
+llmgoat-backend      | 2026-06-13 09:37:46,790 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+llmgoat-backend      | 2026-06-13 09:37:46,791 INFO sqlalchemy.engine.Engine COMMIT
+llmgoat-backend      | [2m2026-06-13T09:37:46.791873Z[0m [[32m[1minfo     [0m] [1mdatabase_ready                [0m
+llmgoat-backend      | INFO:     Application startup complete.
+llmgoat-ollama-init  | Error: pull model manifest: Get "https://registry.ollama.ai/v2/library/llama3.2/manifests/3b": dial tcp: lookup registry.ollama.ai on 127.0.0.11:53: server misbehaving
+llmgoat-ollama-init  | [?2026h[?25l[1Gpulling manifest [K[?25h[?2026l
+llmgoat-ollama-init  | Error: pull model manifest: Get "https://registry.ollama.ai/v2/library/llama3.2/manifests/3b": dial tcp: lookup registry.ollama.ai on 127.0.0.11:53: server misbehaving
+llmgoat-ollama-init  | [?2026h[?25l[1Gpulling manifest [K[?25h[?2026l
+llmgoat-ollama-init  | Error: pull model manifest: Get "https://registry.ollama.ai/v2/library/llama3.2/manifests/3b": dial tcp: lookup registry.ollama.ai on 127.0.0.11:53: server misbehaving
+llmgoat-ollama-init  | [?2026h[?25l[1Gpulling manifest [K[?25h[?2026l
+llmgoat-ollama-init  | Error: pull model manifest: Get "https://registry.ollama.ai/v2/library/llama3.2/manifests/3b": dial tcp: lookup registry.ollama.ai on 127.0.0.11:53: server misbehaving
+llmgoat-nginx        | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+llmgoat-ollama       | time=2026-06-13T09:05:26.789Z level=INFO source=routes.go:1919 msg="server config" env="map[CUDA_VISIBLE_DEVICES: GGML_VK_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: LLAMA_ARG_FIT: LLAMA_ARG_FIT_TARGET: NO_PROXY: OLLAMA_CONTEXT_LENGTH:0 OLLAMA_DEBUG:INFO OLLAMA_DEBUG_LOG_REQUESTS:false OLLAMA_EDITOR: OLLAMA_FLASH_ATTENTION:false OLLAMA_GO_TEMPLATE:true OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://0.0.0.0:11434 OLLAMA_IGPU_ENABLE: OLLAMA_KEEP_ALIVE:5m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MAX_TRANSFER_STREAMS:4 OLLAMA_MODELS:/root/.ollama/models OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NO_CLOUD:false OLLAMA_NUM_PARALLEL:1 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://* vscode-file://*] OLLAMA_REMOTES:[ollama.com] OLLAMA_SCHED_SPREAD:false OLLAMA_VULKAN:true ROCR_VISIBLE_DEVICES: http_proxy: https_proxy: no_proxy:]"
+llmgoat-ollama       | time=2026-06-13T09:05:26.789Z level=INFO source=routes.go:1921 msg="Ollama cloud disabled: false"
+llmgoat-ollama       | time=2026-06-13T09:05:26.791Z level=INFO source=images.go:864 msg="total blobs: 0"
+llmgoat-ollama       | time=2026-06-13T09:05:26.791Z level=INFO source=images.go:871 msg="total unused blobs removed: 0"
+llmgoat-ollama       | time=2026-06-13T09:05:26.793Z level=INFO source=routes.go:1981 msg="Listening on [::]:11434 (version 0.30.8)"
+llmgoat-ollama       | time=2026-06-13T09:05:26.797Z level=INFO source=model_list_cache.go:111 msg="model list cache hydration complete" models=0 failures=0 elapsed=2.077434ms
+llmgoat-ollama       | time=2026-06-13T09:05:26.809Z level=INFO source=runner.go:60 msg="discovering available GPUs..."
+llmgoat-ollama       | time=2026-06-13T09:05:26.811Z level=WARN source=model_show_cache.go:142 msg="model show cloud cache hydration failed" error="Get \"https://ollama.com:443/api/tags?ts=1781341526\": dial tcp: lookup ollama.com on 127.0.0.11:53: server misbehaving"
+llmgoat-ollama       | time=2026-06-13T09:05:26.811Z level=WARN source=model_recommendations.go:168 msg="model recommendations refresh failed" error="Get \"https://ollama.com/api/experimental/model-recommendations\": dial tcp: lookup ollama.com on 127.0.0.11:53: server misbehaving"
+llmgoat-ollama       | time=2026-06-13T09:05:26.811Z level=INFO source=model_recommendations.go:177 msg="model recommendations cache sleep scheduled" wait=5m8.485245998s consecutive_failures=1
+llmgoat-ollama       | time=2026-06-13T09:05:27.565Z level=INFO source=types.go:50 msg="inference compute" id=cpu library=cpu compute="" name=cpu description=cpu libdirs=ollama driver="" pci_id="" type="" total="8.0 GiB" available="8.0 GiB"
+llmgoat-ollama       | time=2026-06-13T09:05:27.565Z level=INFO source=routes.go:2031 msg="vram-based default context" total_vram="0 B" default_num_ctx=4096
+llmgoat-ollama       | [GIN] 2026/06/13 - 09:05:32 | 200 |      65.166µs |      172.20.0.3 | HEAD     "/"
+llmgoat-ollama       | time=2026-06-13T09:05:32.232Z level=INFO source=images.go:1244 msg="request failed: Get \"https://registry.ollama.ai/v2/library/llama3.2/manifests/3b\": dial tcp: lookup registry.ollama.ai on 127.0.0.11:53: server misbehaving"
+llmgoat-ollama       | [GIN] 2026/06/13 - 09:05:32 | 200 |    5.712504ms |      172.20.0.3 | POST     "/api/pull"
+llmgoat-ollama       | [GIN] 2026/06/13 - 09:06:11 | 200 |      36.003µs |      172.20.0.3 | HEAD     "/"
+llmgoat-ollama       | time=2026-06-13T09:06:11.482Z level=INFO source=images.go:1244 msg="request failed: Get \"https://registry.ollama.ai/v2/library/llama3.2/manifests/3b\": dial tcp: lookup registry.ollama.ai on 127.0.0.11:53: server misbehaving"
+llmgoat-ollama       | [GIN] 2026/06/13 - 09:06:11 | 200 |    3.920409ms |      172.20.0.3 | POST     "/api/pull"
+llmgoat-ollama       | [GIN] 2026/06/13 - 09:08:42 | 200 |      38.208µs |      172.20.0.3 | HEAD     "/"
+llmgoat-ollama       | time=2026-06-13T09:08:42.614Z level=INFO source=images.go:1244 msg="request failed: Get \"https://registry.ollama.ai/v2/library/llama3.2/manifests/3b\": dial tcp: lookup registry.ollama.ai on 127.0.0.11:53: server misbehaving"
+llmgoat-ollama       | [GIN] 2026/06/13 - 09:08:42 | 200 |    6.567991ms |      172.20.0.3 | POST     "/api/pull"
+llmgoat-ollama       | time=2026-06-13T09:10:35.347Z level=WARN source=model_recommendations.go:168 msg="model recommendations refresh failed" error="Get \"https://ollama.com/api/experimental/model-recommendations\": dial tcp: lookup ollama.com on 127.0.0.11:53: server misbehaving"
+llmgoat-ollama       | time=2026-06-13T09:10:35.347Z level=INFO source=model_recommendations.go:177 msg="model recommendations cache sleep scheduled" wait=12m24.026447567s consecutive_failures=2
+llmgoat-ollama       | [GIN] 2026/06/13 - 09:12:31 | 200 |      45.593µs |      172.20.0.3 | HEAD     "/"
+llmgoat-ollama       | [GIN] 2026/06/13 - 09:12:31 | 200 |    7.729607ms |      172.20.0.3 | POST     "/api/pull"
+llmgoat-ollama       | time=2026-06-13T09:12:31.866Z level=INFO source=images.go:1244 msg="request failed: Get \"https://registry.ollama.ai/v2/library/llama3.2/manifests/3b\": dial tcp: lookup registry.ollama.ai on 127.0.0.11:53: server misbehaving"
+llmgoat-ollama       | time=2026-06-13T09:22:59.382Z level=WARN source=model_recommendations.go:168 msg="model recommendations refresh failed" error="Get \"https://ollama.com/api/experimental/model-recommendations\": dial tcp: lookup ollama.com on 127.0.0.11:53: server misbehaving"
+llmgoat-ollama       | time=2026-06-13T09:22:59.383Z level=INFO source=model_recommendations.go:177 msg="model recommendations cache sleep scheduled" wait=53m35.662524363s consecutive_failures=3
+llmgoat-ollama       | [GIN] 2026/06/13 - 09:37:47 | 200 |      50.967µs |      172.20.0.3 | HEAD     "/"
+llmgoat-ollama       | [GIN] 2026/06/13 - 09:37:47 | 200 |    4.730559ms |      172.20.0.3 | POST     "/api/pull"
+llmgoat-ollama       | time=2026-06-13T09:37:47.040Z level=INFO source=images.go:1244 msg="request failed: Get \"https://registry.ollama.ai/v2/library/llama3.2/manifests/3b\": dial tcp: lookup registry.ollama.ai on 127.0.0.11:53: server misbehaving"
+llmgoat-nginx        | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+llmgoat-nginx        | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+llmgoat-nginx        | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+llmgoat-nginx        | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+llmgoat-nginx        | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+llmgoat-nginx        | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+llmgoat-nginx        | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+llmgoat-nginx        | /docker-entrypoint.sh: Configuration complete; ready for start up
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:07 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:07 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:10 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:10 [error] 31#31: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 2026/06/13 09:06:13 [error] 32#32: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:13 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:16 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:16 [error] 33#33: *7 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:19 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:19 [error] 30#30: *9 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 2026/06/13 09:06:22 [error] 30#30: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:22 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:25 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:25 [error] 30#30: *13 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:28 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:28 [error] 30#30: *15 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:31 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:31 [error] 30#30: *17 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:34 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:34 [error] 30#30: *19 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:37 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:37 [error] 30#30: *21 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:40 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:40 [error] 30#30: *23 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 2026/06/13 09:06:43 [error] 30#30: *25 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:43 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:46 [error] 30#30: *27 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:46 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:49 [error] 30#30: *29 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:49 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:52 [error] 30#30: *31 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:52 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:56 [error] 30#30: *33 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:56 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:06:59 [error] 30#30: *35 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:06:59 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:02 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:07:02 [error] 30#30: *37 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:05 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:07:05 [error] 30#30: *39 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 2026/06/13 09:07:08 [error] 31#31: *41 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:08 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:07:11 [error] 31#31: *43 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:11 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:07:14 [error] 31#31: *45 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:14 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:07:17 [error] 31#31: *47 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:17 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:07:20 [error] 31#31: *49 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:20 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:23 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:07:23 [error] 31#31: *51 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 2026/06/13 09:07:26 [error] 31#31: *53 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:26 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:07:29 [error] 31#31: *55 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:29 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:32 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:07:32 [error] 31#31: *57 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:35 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:07:35 [error] 31#31: *59 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:59 +0000] "GET / HTTP/1.1" 200 1334 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:59 +0000] "GET /assets/index-Ch5aRsfa.js HTTP/1.1" 200 218090 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:59 +0000] "GET /assets/index-DU1Tplka.css HTTP/1.1" 200 22298 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:07:59 +0000] "GET /favicon.ico HTTP/1.1" 404 146 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:08:02 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:08:02 [error] 31#31: *61 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:08:14 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:08:14 [error] 31#31: *61 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:08:41 +0000] "GET /login HTTP/1.1" 200 1334 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:08:48 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:08:48 [error] 31#31: *61 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:11:45 +0000] "GET /login HTTP/1.1" 304 0 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:11:49 +0000] "GET /docs HTTP/1.1" 200 1334 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:11:57 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:11:57 [error] 31#31: *71 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:12:39 +0000] "GET /login HTTP/1.1" 304 0 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:12:44 [error] 31#31: *75 connect() failed (111: Connection refused) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:12:44 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:20:26 +0000] "GET /login HTTP/1.1" 304 0 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:20:46 [error] 31#31: *78 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:20:46 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:36:32 +0000] "GET / HTTP/1.1" 200 1334 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:36:42 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:36:42 [error] 32#32: *82 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 2026/06/13 09:37:44 [error] 32#32: *85 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:37:44 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:37:50 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:37:50 [error] 32#32: *87 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 2026/06/13 09:37:56 [error] 32#32: *89 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:37:56 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:38:02 [error] 32#32: *91 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:02 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:08 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:38:08 [error] 32#32: *93 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:15 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:38:15 [error] 32#32: *95 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 2026/06/13 09:38:21 [error] 32#32: *97 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:21 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:38:27 [error] 32#32: *99 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:27 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:38:33 [error] 32#32: *101 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:33 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:38:39 [error] 32#32: *103 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:39 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:42 +0000] "GET /login HTTP/1.1" 304 0 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:38:45 [error] 32#32: *107 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:45 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:38:51 [error] 32#32: *109 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 2026/06/13 09:38:51 [error] 32#32: *105 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:51 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:51 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:38:58 [error] 32#32: *112 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:38:58 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:39:04 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:39:04 [error] 32#32: *114 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:39:10 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:39:10 [error] 33#33: *116 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 2026/06/13 09:39:16 [error] 33#33: *118 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:39:16 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:39:22 [error] 33#33: *120 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:39:22 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:39:28 [error] 33#33: *122 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:39:28 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:39:34 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:39:34 [error] 33#33: *124 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:39:40 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:39:40 [error] 33#33: *126 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:39:47 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:39:47 [error] 33#33: *128 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:39:53 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:39:53 [error] 33#33: *130 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 2026/06/13 09:39:59 [error] 33#33: *132 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:39:59 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:40:05 [error] 33#33: *134 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:40:05 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:40:11 [error] 33#33: *136 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:40:11 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:40:17 [error] 33#33: *138 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:40:17 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:40:23 [error] 33#33: *140 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:40:23 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:40:30 [error] 33#33: *142 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:40:30 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:40:36 [error] 33#33: *144 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:40:36 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:40:42 [error] 33#33: *146 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "GET /api/health HTTP/1.1", upstream: "http://172.18.0.6:8000/health", host: "localhost:8080"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:40:42 +0000] "GET /api/health HTTP/1.1" 502 150 "-" "curl/8.5.0"
+llmgoat-nginx        | 2026/06/13 09:41:28 [error] 30#30: *148 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:41:28 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:41:32 [error] 30#30: *148 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:41:32 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+llmgoat-nginx        | 2026/06/13 09:42:05 [error] 30#30: *148 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.19.0.1, server: localhost, request: "POST /api/auth/login HTTP/1.1", upstream: "http://172.18.0.6:8000/auth/login", host: "localhost:8080", referrer: "http://localhost:8080/login"
+llmgoat-nginx        | 172.19.0.1 - - [13/Jun/2026:09:42:05 +0000] "POST /api/auth/login HTTP/1.1" 502 150 "http://localhost:8080/login" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
